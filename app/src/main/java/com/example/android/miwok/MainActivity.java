@@ -55,14 +55,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,FamilyActivity.class);
+                startActivity(intent);
             }
         });
 
         TextView phrase = findViewById(R.id.phrases);
-        family.setOnClickListener(new View.OnClickListener() {
+        phrase.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,PhrasesActivity.class);
+                startActivity(intent);
             }
         });
     }
