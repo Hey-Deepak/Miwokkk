@@ -30,31 +30,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    public void openNumberList(View view){
-        Intent intent = new Intent(this, NumbersActivity.class);
-        startActivity(intent);
 
-        TextView numbers = (TextView)findViewById(R.id.numbers);
-        numbers.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-            }
-        });
+    // Find the View that shows the numbers category
+    TextView numbers = (TextView) findViewById(R.id.numbers);
 
-    }
-    public void openColorsList(View view){
-        Intent intent = new Intent(this, ColorsActivity.class);
-        startActivity(intent);
-    }
-    public void openPhrasesList(View view){
-        Intent intent = new Intent(this, PhrasesActivity.class);
-        startActivity(intent);
-    }
-    public void openFamilyList(View view){
-        Intent intent = new Intent(this, FamilyActivity.class);
-        startActivity(intent);
-    }
-    
+// Set a click listener on that View
+    numbers.setOnClickListener(new View.OnClickListener() {
+        // The code in this method will be executed when the numbers View is clicked on.
+        @Override
+        public void onClick(View view) {
+            Intent numbersIntent = new Intent(MainActivity.this, NumbersActivity.class);
+            startActivity(numbersIntent);
+        }
+    });
 
 }
