@@ -18,6 +18,8 @@ package com.example.android.miwok;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -31,6 +33,15 @@ public class MainActivity extends AppCompatActivity {
     public void openNumberList(View view){
         Intent intent = new Intent(this, NumbersActivity.class);
         startActivity(intent);
+
+        TextView numbers = (TextView)findViewById(R.id.numbers);
+        numbers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
     }
     public void openColorsList(View view){
         Intent intent = new Intent(this, ColorsActivity.class);
@@ -44,5 +55,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, FamilyActivity.class);
         startActivity(intent);
     }
+    
 
 }
