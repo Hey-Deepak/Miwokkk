@@ -50,10 +50,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+            <state relative-caret-position="461">
+              <caret line="67" column="5" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
               <folding>
+                <element signature="e#0#1584#0" expanded="true" />
                 <element signature="imports" expanded="true" />
+                <element signature="e#1536#1776#0" expanded="true" />
+                <element signature="e#1775#1776#0" expanded="true" />
+                <element signature="e#1875#2075#0" expanded="true" />
+                <element signature="e#2074#2075#0" expanded="true" />
+                <element signature="e#2166#2366#0" expanded="true" />
+                <element signature="e#2365#2366#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -62,8 +69,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+            <state relative-caret-position="1012">
+              <caret line="46" column="48" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+              <folding>
+                <element signature="e#1369#1394#0" expanded="true" />
+              </folding>
             </state>
           </provider>
           <provider editor-type-id="android-designer2" />
@@ -286,7 +296,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.16420911" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.16420911" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -301,7 +311,7 @@
       <window_info anchor="bottom" id="Terminal" order="4" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info active="true" anchor="bottom" id="Build" order="7" visible="true" weight="0.1203966" />
+      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.1203966" />
       <window_info anchor="bottom" id="Android Profiler" order="8" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
@@ -343,13 +353,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="37" column="40" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/NumbersActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -412,18 +415,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+        <state relative-caret-position="1012">
+          <caret line="46" column="48" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+          <folding>
+            <element signature="e#1369#1394#0" expanded="true" />
+          </folding>
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/NumbersActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+        <state relative-caret-position="461">
+          <caret line="67" column="5" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
           <folding>
+            <element signature="e#0#1584#0" expanded="true" />
             <element signature="imports" expanded="true" />
+            <element signature="e#1536#1776#0" expanded="true" />
+            <element signature="e#1775#1776#0" expanded="true" />
+            <element signature="e#1875#2075#0" expanded="true" />
+            <element signature="e#2074#2075#0" expanded="true" />
+            <element signature="e#2166#2366#0" expanded="true" />
+            <element signature="e#2365#2366#0" expanded="true" />
           </folding>
         </state>
       </provider>

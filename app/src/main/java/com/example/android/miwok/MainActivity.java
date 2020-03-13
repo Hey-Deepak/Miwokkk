@@ -21,6 +21,8 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.w3c.dom.Text;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -29,20 +31,39 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        TextView numbers = (TextView)findViewById(R.id.numbers);
+        numbers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, NumbersActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        TextView colors = findViewById(R.id.colors);
+        colors.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ColorsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        TextView family = findViewById(R.id.family);
+        family.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,FamilyActivity.class);
+            }
+        });
+
+        TextView phrase = findViewById(R.id.phrases);
+        family.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,PhrasesActivity.class);
+            }
+        });
     }
-
-
-    // Find the View that shows the numbers category
-    TextView numbers = (TextView) findViewById(R.id.numbers);
-
-// Set a click listener on that View
-    numbers.setOnClickListener(new View.OnClickListener() {
-        // The code in this method will be executed when the numbers View is clicked on.
-        @Override
-        public void onClick(View view) {
-            Intent numbersIntent = new Intent(MainActivity.this, NumbersActivity.class);
-            startActivity(numbersIntent);
-        }
-    });
-
 }
