@@ -9,15 +9,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 
-class WordAdapter extends ArrayAdapter {
-    public WordAdapter(@NonNull Context context, int resource, int textViewResourceId) {
-        super(context, resource, textViewResourceId);
-    }
 
+class WordAdapter extends ArrayAdapter<Word> {
     public WordAdapter(NumbersActivity numbersActivity, ArrayList<Word> words) {
-        super(numbersActivity,0, (List) numbersActivity);
+        super(numbersActivity,0, words);
     }
 
 
