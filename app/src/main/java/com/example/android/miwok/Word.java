@@ -6,17 +6,17 @@ public class Word {
 
     private String mMiwokTraslation;
 
-    public Word(String defaultTraslation, String miwokTraslation){
+    public Word(String defaultTranslation, String miwokTranslation){
 
-        mDefaultTraslation = defaultTraslation;
-        mMiwokTraslation = miwokTraslation;
+        mDefaultTraslation = defaultTranslation;
+        mMiwokTraslation = miwokTranslation;
     }
 
-    public String getDefaultTraslation(){
+    public String getDefaultTranslation(){
         return mDefaultTraslation;
     }
 
-    public String getMiwokTraslation(){
+    public String getMiwokTranslation(){
         return mMiwokTraslation;
     }
 }
