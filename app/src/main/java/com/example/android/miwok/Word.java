@@ -14,6 +14,13 @@ public class Word {
         mMiwokTraslation = miwokTranslation;
     }
 
+    public Word(String defaultTraslation, String miwokTraslation, int imageResourceID) {
+
+        mDefaultTraslation = defaultTraslation;
+        mMiwokTraslation = miwokTraslation;
+        mImageResourceID = imageResourceID;
+    }
+
     public String getDefaultTranslation(){
 
         return mDefaultTraslation;
