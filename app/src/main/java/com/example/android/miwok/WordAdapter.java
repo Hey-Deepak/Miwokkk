@@ -10,11 +10,15 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import androidx.core.content.ContextCompat;
+
 /**
  * {@link WordAdapter} is an {@link ArrayAdapter} that can provide the layout for each list item
  * based on a data source, which is a list of {@link Word} objects.
  */
 public class WordAdapter extends ArrayAdapter<Word>  {
+
+    private int mColorResourceId;
 
     /**
      * Create a new {@link WordAdapter} object.
@@ -22,9 +26,13 @@ public class WordAdapter extends ArrayAdapter<Word>  {
      * @param context is the current context (i.e. Activity) that the adapter is being created in.
      * @param words is the list of {@link Word}s to be displayed.
      */
-    public WordAdapter(Context context, ArrayList<Word> words) {
+    public WordAdapter(Context context, ArrayList<Word> words, int colorResourceId) {
+
         super(context, 0, words);
+        mColorResourceId = colorResourceId;
     }
+
+
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
@@ -61,6 +69,10 @@ public class WordAdapter extends ArrayAdapter<Word>  {
         } else {
             imageView.setVisibility(View.GONE);
         }
+
+        View textContainer = listItemView.findViewById(R.id.text_container);
+        int color = ContextCompat.getColor(getContext(), mColorResourceId);
+        textContainer.setBackgroundColor(color);
 
         return listItemView;
     }
