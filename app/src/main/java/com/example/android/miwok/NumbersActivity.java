@@ -42,7 +42,6 @@ public class NumbersActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 MediaPlayer mediaPlayer = MediaPlayer.create(NumbersActivity.this, R.raw.number_one);
                 mediaPlayer.start();
-                Toast.makeText(NumbersActivity.this, "Hi", Toast.LENGTH_SHORT).show();;
             }
         });
     }
